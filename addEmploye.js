@@ -23,7 +23,14 @@ export default function addEmploye()
     mainForm.addEventListener('submit', (e)=> {
         e.preventDefault()
 
-        const employe = new EmployeStorage().add({
+        const employeStorage = new EmployeStorage()
+
+        if (employeStorage.existByField('email', email.value.trim())) {
+            alert('L\'email "' + email.value + '" existes déjà!')
+            return
+        }
+
+        const employe = employeStorage.addadd({
             name: name.value.trim(),
             email: email.value.trim(),
             surname: surname.value.trim(),

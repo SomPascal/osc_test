@@ -11,6 +11,42 @@ export default class EmployeStorage
     /**
      * @returns {Array<Employee>}
      */
+    getEmployes()
+    {
+        const rawEmployes = JSON.parse(
+            window.localStorage.getItem(constants.storageKeys.employes) ?? '[]'
+        )
+        const employes = []
+
+
+        rawEmployes.map(employe => {
+            employes.push(new Employee(employe))
+        })
+
+        return employes
+    }
+
+    /**
+     * 
+     * @param {String} fieldnName 
+     * @param {String} value 
+     */
+    existByField(fieldName, value)
+    {
+        let exists = false
+
+        this.getEmployes().forEach(employee => {
+            if (employee[fieldName] && employee[fieldName] == value) {
+                exists = true
+                return
+            }
+        })
+        return exists
+    }
+
+    /**
+     * @returns {Array<Employee>}
+     */
     getAll()
     {
         const rawEmployes = JSON.parse(

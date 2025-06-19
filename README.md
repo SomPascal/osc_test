@@ -36,3 +36,6 @@ Ce projet est une application web simple permettant de gérer un annuaire d'empl
 - Afficher la liste des employés
 - Supprimer un employé
 - Stockage local des données (aucun backend requis)
+
+## Bonus
+L'application vérifie si lors de l'ajout de nouvel employé si l'email entré n'existe pas déjà dans le localStorage.
