@@ -54,6 +54,11 @@ h2 {
     font-size: 17px;
     cursor: pointer;
     border: none;
+    transition: .3 ease;
+}
+
+.button:hover {
+    background: rgb(5, 87, 87);
 }
 
 .button-danger {
