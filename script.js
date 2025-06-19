@@ -10,7 +10,7 @@ class Employee
     
     fullName()
     {
-        return this.name + ' ' + this.surname
+        return this.surname + ' ' + this.name
     }
 }
 

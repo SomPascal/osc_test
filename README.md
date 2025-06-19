@@ -1,14 +1,13 @@
-# Annuaire de gestion d'employés
+# Annuaire de gestion d'employés - Orange Summer Challenge 2025
 
 Ce projet est une application web simple permettant de gérer un annuaire d'employés. Vous pouvez ajouter, lister et supprimer des employés. Les données sont stockées localement dans le navigateur grâce au `localStorage`.
 
 # Auteur
 - nom: Ndjengwes Ruben Ulrich
-- téléphone: 656 47 37 48
 - languages utilisés: HTML, CSS, Javascript
-- Temps réellement passé: environt 02 heures
+- Temps réellement passé: environt 03 heures
 
-## Installation
+## Installation : Instruction pour ouvrir le projet
 
 1. **Cloner le dépôt**  
    Téléchargez ou clonez ce dépôt sur votre machine via le lien [https://github.com/SomPascal/osc_test](https://github.com/SomPascal/osc_test) ou cloner le dépôt avec la commande
