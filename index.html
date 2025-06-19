@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>
+        OSC Test - Annuaire
+    </title>
+</head>
+<body>
+
+    <form id="main-form" class="main-form" action="#">
+        <h2>
+          Ajouter un employé
+        </h2>
+
+        <input 
+          class="input"
+          type="text" 
+          minlength="2" 
+          maxlength="255"
+          placeholder="Your name" 
+          required 
+          id="name"
+        />
+
+        <input 
+          class="input"
+          type="text"
+          id="surname"
+          placeholder="Your surname"
+          minlength="2"
+          maxlength="255"
+          required
+        />
+
+        <input 
+          class="input"
+          type="email" 
+          placeholder="your email"
+          id="email"
+          required 
+        />
+        <input 
+          class="input"
+          type="text"
+          placeholder="Poste ou fonction" 
+          id="job"
+        />
+
+        <button class="button" type="submit">
+          Ajouter
+        </button>
+    </form>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
