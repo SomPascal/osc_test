@@ -9,6 +9,41 @@ export default class EmployeStorage
     }
 
     /**
+     * @returns {Array<Employee>}
+     */
+    getAll()
+    {
+        const rawEmployes = JSON.parse(
+            window.localStorage.getItem(constants.storageKeys.employes) ?? '[]'
+        )
+        const employes = []
+
+
+        rawEmployes.map(employe => {
+            employes.push(new Employee(employe))
+        })
+
+        return employes
+    }
+
+    remove(id)
+    {
+        console.log(id);
+        
+        const storedData = JSON.parse(
+            window.localStorage.getItem(constants.storageKeys.employes) ?? '[]'
+        )
+
+        console.log(storedData);
+        
+        window.localStorage.setItem(
+            constants.storageKeys.employes, JSON.stringify(
+                storedData.filter(employe => employe.id != id)
+            )
+        )
+    }
+
+    /**
      * 
      * @param {Object} employe
      * @return {Employee} 

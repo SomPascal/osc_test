@@ -1,5 +1,4 @@
-import constants from "./constants.js"
-import Employee from "./entities/Employe.js"
+import listEmploye from "./listEmploye.js"
 import EmployeStorage from "./services/employeStorage.js"
 
 export default function addEmploye()
@@ -33,6 +32,7 @@ export default function addEmploye()
         console.log(employe);
         
         clearForm()
+        listEmploye()
         alert(employe.name + ' a été ajouté avec succès!')
     })
     
