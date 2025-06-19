@@ -5,6 +5,25 @@
     font-family: sans-serif;
 }
 
+body {
+    background: teal;
+}
+
+h1 {
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 .main-form {
     padding: 15px;
     background: #f2f2f2;
@@ -12,11 +31,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 60%;
+    min-width: 350px;
+    max-width: 800px;
+    box-shadow: 0 10px 80px #333333bc;
+
 }
 
 .input {
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-size: 18px;
     border: none;
     outline: none;
@@ -25,7 +49,7 @@
 .button {
     padding: 10px;
     border-radius: 10px;
-    background: #333333;
+    background: teal;
     color: #f2f2f2;
     font-size: 17px;
     cursor: pointer;
@@ -45,4 +69,52 @@
 .list-employes {
     width: 100%;
     padding: 5px;
+}
+
+#list-employes {
+    background: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 80px #33333357;
+    width: 60%;
+    height: auto;
+    min-width: 350px;
+    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-red {
+    color: brown;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.justify-center {
+    justify-items: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-3 {
+    gap: 15px;
+}
+
+.gap-5 {
+    gap: 25px;
 }

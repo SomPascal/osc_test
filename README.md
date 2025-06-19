@@ -2,6 +2,12 @@
 
 Ce projet est une application web simple permettant de gérer un annuaire d'employés. Vous pouvez ajouter, lister et supprimer des employés. Les données sont stockées localement dans le navigateur grâce au `localStorage`.
 
+# Auteur
+- nom: Ndjengwes Ruben Ulrich
+- téléphone: 656 47 37 48
+- languages utilisés: HTML, CSS, Javascript
+- Temps réellement passé: environt 02 heures
+
 ## Installation
 
 1. **Cloner le dépôt**  
@@ -17,7 +23,7 @@ Ce projet est une application web simple permettant de gérer un annuaire d'empl
 ## Lancement
 
 1. **Ouvrir le fichier HTML**  
-   Ouvrez simplement le fichier [`index.html`](index.html) dans votre navigateur web préféré.
+   Ouvrez simplement le fichier [`index.html`](index.html) dans votre navigateur web préféré en double cliquant dessus.
 
 2. **Utilisation**  
    - Remplissez le formulaire pour ajouter un nouvel employé.

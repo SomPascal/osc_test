@@ -13,68 +13,98 @@
       Gestion d'employés
     </h1>
 
-    <form id="main-form" class="main-form" action="#">
+    <div class="w-full flex flex-col items-center gap-5">
+      <form id="main-form" class="main-form" action="#">
+          <h2>
+            Ajouter un employé
+          </h2>
+  
+          <div class="w-full flex flex-col">
+            <span class="mb-1">
+              Nom 
+              <span class="text-red">*</span>
+            </span>
+  
+            <input 
+              class="input w-full"
+              type="text" 
+              minlength="2" 
+              maxlength="255"
+              placeholder="Ex: Doe" 
+              required 
+              id="name"
+            />
+          </div>
+  
+          <div class="w-full flex flex-col">
+            <span class="mb-1">
+              Prénom 
+              <span class="text-red">*</span>
+            </span>
+  
+            <input 
+              class="input"
+              type="text"
+              id="surname"
+              placeholder="Ex: John"
+              minlength="2"
+              maxlength="255"
+              required
+            />
+          </div>
+  
+          <div class="w-full flex flex-col">
+            <span class="mb-1">
+              Email 
+              <span class="text-red">*</span>
+            </span>
+            <input 
+              class="input"
+              type="email" 
+              placeholder="Ex: john@doe.com"
+              id="email"
+              required 
+            />
+          </div>
+          
+          <div class="w-full flex flex-col">
+            <span class="mb-1">
+              Fonction / Poste 
+              <span class="text-red">*</span>
+            </span>
+            <input 
+              class="input"
+              type="text"
+              placeholder="Poste ou fonction" 
+              id="job"
+            />
+          </div>
+  
+  
+          <button class="button" type="submit">
+            Ajouter
+          </button>
+      </form>
+  
+      <section id="list-employes">
         <h2>
-          Ajouter un employé
+          Liste d'employés
         </h2>
-
-        <input 
-          class="input"
-          type="text" 
-          minlength="2" 
-          maxlength="255"
-          placeholder="Your name" 
-          required 
-          id="name"
-        />
-
-        <input 
-          class="input"
-          type="text"
-          id="surname"
-          placeholder="Your surname"
-          minlength="2"
-          maxlength="255"
-          required
-        />
-
-        <input 
-          class="input"
-          type="email" 
-          placeholder="your email"
-          id="email"
-          required 
-        />
-        <input 
-          class="input"
-          type="text"
-          placeholder="Poste ou fonction" 
-          id="job"
-        />
-
-        <button class="button" type="submit">
-          Ajouter
-        </button>
-    </form>
-
-    <section id="list-employes">
-      <h2>
-        Liste d'employés
-      </h2>
-
-      <table border="1" class="list-employes">
-        <thead>
-          <tr>
-            <td>Nom Complet</td>
-            <td>Email</td>
-            <td>Fonction</td>
-            <td>Action</td>
-          </tr>
-        </thead>
-
-        <tbody></tbody>
-      </table>
-    </section>
+  
+        <table border="1" class="list-employes">
+          <thead>
+            <tr>
+              <td>Nom Complet</td>
+              <td>Email</td>
+              <td>Fonction</td>
+              <td>Action</td>
+            </tr>
+          </thead>
+  
+          <tbody></tbody>
+        </table>
+      </section>
+    </div>
     <script type="module" src="/script.js"></script>
 </body>
 </html>
